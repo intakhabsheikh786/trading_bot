@@ -116,17 +116,23 @@ class Database:
         # If the user doesn't exist, return 0 balance
         return result[0] if result else 0
 
-    def get_position(self):
+    def get_position(self, type="table"):
         conn = sqlite3.connect(self.db_name)
         conn.row_factory = sqlite3.Row
         c = conn.cursor()
         c.execute('SELECT * FROM holdings where status = "open"')
         holdings = c.fetchall()
-
+        message = ""
         json_data = [dict(holding) for holding in holdings]
 
-        conn.close()
-        # If the user doesn't exist, return 0 balance
+        if type == "table":
+            for holding in json_data:
+                message += "{}\n".format(holding['symbol'])
+                message += "Qty: {}, Avg Price: {}\n\n".format(
+                    holding['quantity'], holding['average_price'])
+
+        if type == "table":
+            return message
         return json_data
 
     def insert_trade_if_valid(self, symbol, price):

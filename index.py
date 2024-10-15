@@ -71,7 +71,7 @@ def handle_trade():
 @app.route("/get_position", methods=["POST"])
 def handle_position():
     print("command recieved.")
-    holdings = db.get_position()
+    holdings = db.get_position("json")
     print("respone sent.")
     return jsonify(holdings), 200
 
