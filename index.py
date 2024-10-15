@@ -62,7 +62,6 @@ def handle_trade():
     command = commands.get("/trade", DefaultCommand)
     print("command loaded.")
     response = command(update, db).execute()
-    # print(response)
     print("respose loaded.")
     send_message(response)
     print("response sent")
@@ -73,7 +72,7 @@ def handle_trade():
 def handle_position():
     print("command recieved.")
     holdings = db.get_position()
-    print(holdings)
+    print("respone sent.")
     return jsonify(holdings), 200
 
 
@@ -100,7 +99,6 @@ def handle_command():
         # db.add_request(str(current_datetime) + " : " + str("request"))
         print("command recieved.")
         update = request.get_json()
-        print(update)
         is_bot = update['message']['from']['is_bot']
         print("is_bot : " + str(is_bot))
         first_name = update['message']['from']['first_name']

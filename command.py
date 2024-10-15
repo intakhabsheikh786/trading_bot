@@ -39,8 +39,12 @@ class AddFundCommand(Command):
 
 class GetFundCommand(Command):
     def execute(self):
-        response = self.db.get_balance(self.update['message']['from']['id'])
-        return self._create_response(response, "text")
+        try:
+            response = f"Your current balance is : {round(self.db.get_balance(1),2)}"
+            return self._create_response(response, "text")
+        except:
+            response = f"Something wrong at server level"
+            return self._create_response(response, "text")
 
 
 class HoldingsCommand(Command):
@@ -53,17 +57,17 @@ class HoldingsCommand(Command):
 
 class TradeExecutionCommand(Command):
     def execute(self):
+        trade = {}
         try:
             for ticker in self.update["text"]:
                 symbol = ticker["ticker"]
                 cmp = ticker["cmp"]
-                print(symbol, cmp)
-                executed = self.db.insert_trade_if_valid(symbol, cmp)
-                if executed:
-                    response = f"Trade Executed of {ticker} at {cmp}"
+                trade = self.db.insert_trade_if_valid(symbol, cmp)
+                if trade["status"] == True:
+                    response = f"Trade Executed of {symbol} at {cmp} for qauntity {trade['qauntity']}"
                     return self._create_response(response, "text")
 
-            response = f"Trade Failed because of some validation failed."
+            response = trade["message"]
             return self._create_response(response, "text")
 
         except (IndexError, ValueError):
@@ -75,7 +79,7 @@ class ExitCommand(Command):
     def execute(self):
         try:
             symbol = self.update["symbol"]
-            print(symbol)
+            print("Going to exit :", symbol)
             status = self.db.exit_trade(symbol)
             if status:
                 response = f"Trade exited ${symbol}."
@@ -91,7 +95,6 @@ class ExitCommand(Command):
 
 class DefaultCommand(Command):
     def execute(self):
-        print(self.update)
         message = self.update['message']['text']
         response = "Invalid command: " + message
         return self._create_response(response, "text")

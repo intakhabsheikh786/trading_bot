@@ -104,11 +104,11 @@ class Database:
 
     # Function to fetch account balance
 
-    def get_balance(self, user_id):
+    def get_balance(self, fund_id):
         conn = sqlite3.connect(self.db_name)
         c = conn.cursor()
 
-        c.execute('SELECT balance FROM users WHERE user_id = ?', (user_id,))
+        c.execute('SELECT balance FROM funds WHERE fund_id = ?', (fund_id,))
         result = c.fetchone()
 
         conn.close()
@@ -130,8 +130,6 @@ class Database:
         return json_data
 
     def insert_trade_if_valid(self, symbol, price):
-        print(symbol, price)
-
         conn = sqlite3.connect(self.db_name)
         c = conn.cursor()
 
@@ -150,8 +148,7 @@ class Database:
         risk_threshold = c.fetchone()[0]
 
         if not balance_result or balance_result[0] < risk_threshold:
-            print(f"Trade for {symbol} not executed. Insufficient funds.")
-            return False
+            return {"status": False, "message": f"Trade for {symbol} not executed. Insufficient funds."}
 
         quantity = int(risk_threshold / price)
         trade_cost = quantity * price
@@ -164,10 +161,8 @@ class Database:
                 print(
                     f"Trade inserted for {symbol}: {quantity} shares at {price}.")
             else:
-                print(
-                    f"Trade for {symbol} not inserted. CMP is not 2.5% lower than average.")
                 conn.close()
-                return False
+                return {"status": False, "message": f"Trade for {symbol} not executed. CMP is not 2.5% lower than average."}
         else:
             # If the holding does not exist, insert the trade directly
             self.insert_trade(c, symbol, quantity, price)
@@ -182,7 +177,7 @@ class Database:
 
         conn.commit()
         conn.close()
-        return True
+        return {"status": True, "qauntity": quantity}
 
     def insert_trade(self, cursor, symbol, quantity, price):
         # Insert the trade
