@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 from database import Database
 import datetime
 from utility import log
-from command import StartCommand, HelpCommand, DefaultCommand, AddFundCommand, GetFundCommand, HoldingsCommand, TradeExecutionCommand, ExitCommand
+from command import StartCommand, HelpCommand, DefaultCommand, AddFundCommand, GetFundCommand, HoldingsCommand, TradeExecutionCommand, ExitCommand, OrdersCommand
 import traceback
 
 commands = {
@@ -14,7 +14,8 @@ commands = {
     "/holdings": HoldingsCommand,
     "/balance": GetFundCommand,
     "/trade": TradeExecutionCommand,
-    "/exit_trade": ExitCommand
+    "/exit_trade": ExitCommand,
+    "/orders": OrdersCommand
 }
 
 app = Flask(__name__)

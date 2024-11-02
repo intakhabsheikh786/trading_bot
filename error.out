@@ -115,3 +115,30 @@
 2024-10-14 00:07:23.094236 : exception in handle_command
 2024-10-14 00:07:23.094236 : {'update_id': 12828073, 'message': {'message_id': 267, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728844638, 'text': '/holdings', 'entities': [{'offset': 0, 'length': 9, 'type': 'bot_command'}]}}
 2024-10-14 00:07:23.094236 : cannot convert dictionary update sequence element #0 to a sequence
+2024-10-20 00:27:59.460841 : exception in handle_command
+2024-10-20 00:27:59.460841 : {'update_id': 12828135, 'message': {'message_id': 398, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364214, 'text': '/trade', 'entities': [{'offset': 0, 'length': 6, 'type': 'bot_command'}]}}
+2024-10-20 00:27:59.460841 : 'text'
+2024-10-20 00:28:30.575694 : exception in handle_command
+2024-10-20 00:28:30.575694 : {'update_id': 12828136, 'message': {'message_id': 399, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364310, 'text': '/trade', 'entities': [{'offset': 0, 'length': 6, 'type': 'bot_command'}]}}
+2024-10-20 00:28:30.575694 : 'text'
+2024-10-20 00:28:44.386936 : exception in handle_command
+2024-10-20 00:28:44.386936 : {'update_id': 12828137, 'message': {'message_id': 400, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364324, 'text': '/trade', 'entities': [{'offset': 0, 'length': 6, 'type': 'bot_command'}]}}
+2024-10-20 00:28:44.386936 : 'text'
+2024-10-20 00:31:35.923880 : exception in handle_command
+2024-10-20 00:31:35.923880 : {'update_id': 12828139, 'message': {'message_id': 403, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364495, 'text': '/orders', 'entities': [{'offset': 0, 'length': 7, 'type': 'bot_command'}]}}
+2024-10-20 00:31:35.923880 : 'Database' object has no attribute 'get_orders'
+2024-10-20 00:31:54.853996 : exception in handle_command
+2024-10-20 00:31:54.853996 : {'update_id': 12828140, 'message': {'message_id': 404, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364514, 'text': '/orders', 'entities': [{'offset': 0, 'length': 7, 'type': 'bot_command'}]}}
+2024-10-20 00:31:54.853996 : no such table: trade
+2024-10-20 00:32:12.780431 : exception in handle_command
+2024-10-20 00:32:12.780431 : {'update_id': 12828141, 'message': {'message_id': 405, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364532, 'text': '/orders', 'entities': [{'offset': 0, 'length': 7, 'type': 'bot_command'}]}}
+2024-10-20 00:32:12.780431 : Incorrect number of bindings supplied. The current statement uses 1, and there are 4 supplied.
+2024-10-20 00:33:20.000927 : exception in handle_command
+2024-10-20 00:33:20.000927 : {'update_id': 12828142, 'message': {'message_id': 406, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364599, 'text': '/orders', 'entities': [{'offset': 0, 'length': 7, 'type': 'bot_command'}]}}
+2024-10-20 00:33:20.000927 : 'average_price'
+2024-10-20 00:33:28.670830 : exception in handle_command
+2024-10-20 00:33:28.670830 : {'update_id': 12828143, 'message': {'message_id': 407, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364608, 'text': '/orders', 'entities': [{'offset': 0, 'length': 7, 'type': 'bot_command'}]}}
+2024-10-20 00:33:28.670830 : 'average_price'
+2024-10-20 00:33:46.686170 : exception in handle_command
+2024-10-20 00:33:46.686170 : {'update_id': 12828144, 'message': {'message_id': 408, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364626, 'text': '/orders', 'entities': [{'offset': 0, 'length': 7, 'type': 'bot_command'}]}}
+2024-10-20 00:33:46.686170 : 'average_price'

@@ -135,6 +135,25 @@ class Database:
             return message
         return json_data
 
+    def get_orders(self, type="table", order_type="open"):
+        conn = sqlite3.connect(self.db_name)
+        conn.row_factory = sqlite3.Row
+        c = conn.cursor()
+        c.execute('SELECT * FROM trades where status = ?', (order_type,))
+        holdings = c.fetchall()
+        message = ""
+        json_data = [dict(holding) for holding in holdings]
+
+        if type == "table":
+            for holding in json_data:
+                message += "{}\n".format(holding['symbol'])
+                message += "Qty: {}, Price: {}, Type: {}\n\n".format(
+                    holding['quantity'], holding['price'], holding['type'])
+
+        if type == "table":
+            return message
+        return json_data
+
     def insert_trade_if_valid(self, symbol, price):
         conn = sqlite3.connect(self.db_name)
         c = conn.cursor()

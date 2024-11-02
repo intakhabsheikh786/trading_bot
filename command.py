@@ -55,6 +55,12 @@ class HoldingsCommand(Command):
         return self._create_response(holdings, "text")
 
 
+class OrdersCommand(Command):
+    def execute(self):
+        holdings = self.db.get_orders()
+        return self._create_response(holdings, "text")
+
+
 class TradeExecutionCommand(Command):
     def execute(self):
         trade = {}
