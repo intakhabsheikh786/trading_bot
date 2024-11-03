@@ -4,8 +4,9 @@ from flask import Flask, request, jsonify
 from database import Database
 import datetime
 from utility import log
-from command import StartCommand, HelpCommand, DefaultCommand, AddFundCommand, GetFundCommand, HoldingsCommand, TradeExecutionCommand, ExitCommand, OrdersCommand
+from command import StartCommand, HelpCommand, DefaultCommand, AddFundCommand, GetFundCommand, HoldingsCommand, TradeExecutionCommand, ExitCommand, OrdersCommand, SubscribeCommand, UnsubscribeCommand, GetUsersCommand
 import traceback
+import json
 
 commands = {
     "/start": StartCommand,
@@ -15,7 +16,10 @@ commands = {
     "/balance": GetFundCommand,
     "/trade": TradeExecutionCommand,
     "/exit_trade": ExitCommand,
-    "/orders": OrdersCommand
+    "/orders": OrdersCommand,
+    "/subscribe": SubscribeCommand,
+    "/unsubscribe": UnsubscribeCommand,
+    "/users": GetUsersCommand
 }
 
 app = Flask(__name__)
@@ -51,6 +55,40 @@ def send_message(message):
         requests.post(TEXT_URL, json={"chat_id": chat_id, "text": response})
 
 
+def send_broadcast(message):
+    update = {}
+    try:
+        print(type(db.get_users("json")))
+        users = db.get_users("json")
+        text_message = message.get("type")
+        response = message.get("response", "response")
+        if text_message == "text":
+            for user in users:
+                requests.post(ACTION_URL, json={
+                              "chat_id": user["user_id"], "action": "typing"})
+                response = requests.post(
+                    TEXT_URL, json={"chat_id": user["user_id"], "text": response})
+                if response.status_code != 200:
+                    print(response.content)
+                return None
+        print("response type is other than text")
+        requests.post(ACTION_URL, json={
+                      "chat_id": user["user_id"], "action": "uploading_photo"})
+
+    except Exception as e:
+        current_datetime = datetime.datetime.now()
+        where = str(current_datetime) + " : " + \
+            str("exception in send_broadcast")
+        log(where)
+        update = str(current_datetime) + " : " + \
+            str(update)
+        log(update)
+        print(traceback.format_exc())
+        what = str(current_datetime) + " : " + str(e)
+        log(what)
+        return "Internal server error in main", 200
+
+
 @app.route("/", methods=["GET"])
 def handle_home():
     return "Working"
@@ -64,7 +102,7 @@ def handle_trade():
     print("command loaded.")
     response = command(update, db).execute()
     print("respose loaded.")
-    send_message(response)
+    send_broadcast(response)
     print("response sent")
     return "OK", 200
 

@@ -1,156 +1,23 @@
-2023-10-27 00:17:40.710811 : exception in handle_command
-2023-10-27 00:17:40.710811 : {'update_id': 12827961, 'message': {'message_id': 32, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698346061, 'text': 'H'}}
-2023-10-27 00:17:40.710811 : division by zero
-2023-10-27 21:26:07.231163 : exception in handle_command
-2023-10-27 21:26:07.231163 : {'update_id': 12827962, 'message': {'message_id': 33, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698422166, 'text': 'Hi'}}
-2023-10-27 21:26:07.231163 : can only concatenate str (not "bool") to str
-2023-10-27 21:27:32.531944 : exception in handle_command
-2023-10-27 21:27:32.531944 : {'update_id': 12827963, 'message': {'message_id': 34, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698422252, 'text': 'Hi'}}
-2023-10-27 21:27:32.531944 : can only concatenate str (not "bool") to str
-2023-10-27 21:30:13.344355 : exception in handle_command
-2023-10-27 21:30:13.344355 : {'update_id': 12827964, 'message': {'message_id': 35, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698422413, 'text': 'hi'}}
-2023-10-27 21:30:13.344355 : can only concatenate str (not "bool") to str
-2023-10-27 21:30:52.525279 : exception in handle_command
-2023-10-27 21:30:52.525279 : {'update_id': 12827965, 'message': {'message_id': 36, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698422452, 'text': 'Hi'}}
-2023-10-27 21:30:52.525279 : Command.__init__() missing 1 required positional argument: 'message'
-2023-10-27 21:33:52.943079 : exception in handle_command
-2023-10-27 21:33:52.943079 : {'update_id': 12827966, 'message': {'message_id': 37, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698422632, 'text': 'Hello'}}
-2023-10-27 21:33:52.943079 : 'DefaultCommand' object has no attribute 'message'
-2023-10-27 21:48:17.197528 : exception in handle_command
-2023-10-27 21:48:17.197528 : {'update_id': 12827971, 'message': {'message_id': 46, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698423497, 'text': 'Hi'}}
-2023-10-27 21:48:17.197528 : Command.__init__() takes 1 positional argument but 2 were given
-2023-10-27 21:48:48.821915 : exception in handle_command
-2023-10-27 21:48:48.821915 : {'update_id': 12827972, 'message': {'message_id': 47, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698423528, 'text': 'j'}}
-2023-10-27 21:48:48.821915 : 'method' object does not support item assignment
-2023-10-27 21:50:10.498173 : exception in handle_command
-2023-10-27 21:50:10.498173 : {'update_id': 12827974, 'message': {'message_id': 49, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698423610, 'text': 'gu'}}
-2023-10-27 21:50:10.498173 : DefaultCommand.get_response() takes 1 positional argument but 2 were given
-2023-10-27 21:50:52.526357 : exception in handle_command
-2023-10-27 21:50:52.526357 : {'update_id': 12827975, 'message': {'message_id': 50, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698423652, 'text': 'g'}}
-2023-10-27 21:50:52.526357 : DefaultCommand.get_response() takes 1 positional argument but 3 were given
-2023-10-27 21:53:47.932705 : exception in handle_command
-2023-10-27 21:53:47.932705 : {'update_id': 12827977, 'message': {'message_id': 52, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698423827, 'text': 'h'}}
-2023-10-27 21:53:47.932705 : 'DefaultCommand' object has no attribute 'get_respone'
-2023-10-27 23:08:03.626633 : exception in handle_command
-2023-10-27 23:08:03.626633 : {'update_id': 12827989, 'message': {'message_id': 67, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698428283, 'text': 'g'}}
-2023-10-27 23:08:03.626633 : 'DefaultCommand' object has no attribute 'get_response'
-2023-10-27 23:16:53.277258 : exception in handle_command
-2023-10-27 23:16:53.277258 : {'update_id': 12827991, 'message': {'message_id': 70, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698428813, 'text': 'Hi'}}
-2023-10-27 23:16:53.277258 : 'DefaultCommandHandler' object has no attribute 'update'
-2023-10-27 23:19:07.152465 : exception in handle_command
-2023-10-27 23:19:07.152465 : {'update_id': 12827992, 'message': {'message_id': 71, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698428947, 'text': 'hi'}}
-2023-10-27 23:19:07.152465 : 'builtin_function_or_method' object is not subscriptable
-2023-10-27 23:21:10.147699 : exception in handle_command
-2023-10-27 23:21:10.147699 : {'update_id': 12827993, 'message': {'message_id': 72, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698429070, 'text': 'h'}}
-2023-10-27 23:21:10.147699 : DefaultCommandHandler.execute() missing 1 required positional argument: 'update'
-2023-10-27 23:24:47.819416 : exception in handle_command
-2023-10-27 23:24:47.819416 : {'update_id': 12827994, 'message': {'message_id': 73, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698429287, 'text': 'g'}}
-2023-10-27 23:24:47.819416 : DefaultCommandHandler.execute() missing 1 required positional argument: 'update'
-2023-10-27 23:25:52.256223 : exception in handle_command
-2023-10-27 23:25:52.256223 : {'update_id': 12827995, 'message': {'message_id': 74, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698429352, 'text': 'j'}}
-2023-10-27 23:25:52.256223 : 'builtin_function_or_method' object is not subscriptable
-2023-10-27 23:26:18.276169 : exception in handle_command
-2023-10-27 23:26:18.276169 : {'update_id': 12827996, 'message': {'message_id': 75, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698429378, 'text': '1'}}
-2023-10-27 23:26:18.276169 : 'builtin_function_or_method' object is not subscriptable
-2023-10-27 23:58:20.448390 : exception in handle_command
-2023-10-27 23:58:20.448390 : {'update_id': 12827997, 'message': {'message_id': 76, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698431300, 'text': 'j'}}
-2023-10-27 23:58:20.448390 : DefaultCommandHandler.execute() missing 1 required positional argument: 'update'
-2023-10-27 23:59:04.325440 : exception in handle_command
-2023-10-27 23:59:04.325440 : {'update_id': 12827998, 'message': {'message_id': 77, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698431344, 'text': 'h'}}
-2023-10-27 23:59:04.325440 : string indices must be integers
-2023-10-28 00:05:56.645073 : exception in handle_command
-2023-10-28 00:05:56.645073 : {'update_id': 12828002, 'message': {'message_id': 84, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1698431756, 'text': 'Hu'}}
-2023-10-28 00:05:56.645073 : DefaultCommand.execute() missing 1 required positional argument: 'update'
-2024-10-13 13:03:34.886207 : exception in handle_command
-2024-10-13 13:03:34.886207 : {'update_id': 12828018, 'message': {'message_id': 109, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728804810, 'text': '/fund', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
-2024-10-13 13:03:34.886207 : 'dict' object has no attribute 'user_id'
-2024-10-13 13:04:37.623520 : exception in handle_command
-2024-10-13 13:04:37.623520 : {'update_id': 12828019, 'message': {'message_id': 110, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728804873, 'text': '/fund', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
-2024-10-13 13:04:37.623520 : 'dict' object has no attribute 'message'
-2024-10-13 13:05:41.454184 : exception in handle_command
-2024-10-13 13:05:41.454184 : {'update_id': 12828020, 'message': {'message_id': 111, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728804937, 'text': '/fund', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
-2024-10-13 13:05:41.454184 : 'dict' object has no attribute 'message'
-2024-10-13 13:22:58.666547 : exception in handle_command
-2024-10-13 13:22:58.666547 : {'update_id': 12828031, 'message': {'message_id': 132, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728805974, 'text': '/fund', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
-2024-10-13 13:22:58.666547 : 'dict' object has no attribute 'split'
-2024-10-13 13:23:10.547999 : exception in handle_command
-2024-10-13 13:23:10.547999 : {'update_id': 12828032, 'message': {'message_id': 133, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728805986, 'text': '/fund\n500', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
-2024-10-13 13:23:10.547999 : 'dict' object has no attribute 'split'
-2024-10-13 13:26:59.514115 : exception in handle_command
-2024-10-13 13:26:59.514115 : {'update_id': 12828037, 'message': {'message_id': 142, 'from': {'id': 1764899660, 'is_bot': False, 'first_name': 'Aftab', 'last_name': 'Sheikh', 'language_code': 'en'}, 'chat': {'id': 1764899660, 'first_name': 'Aftab', 'last_name': 'Sheikh', 'type': 'private'}, 'date': 1728806215, 'text': '/fund', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
-2024-10-13 13:26:59.514115 : list index out of range
-2024-10-13 15:56:25.303525 : exception in handle_command
-2024-10-13 15:56:25.303525 : {'chat_id': '1316144383', 'text': [{'ticker': 'NSE:FMCGIETF', 'cmp': 65.34}, {'ticker': 'NSE:AXISBNKETF', 'cmp': 522.91}, {'ticker': 'NSE:BANKETF', 'cmp': 516.77}]}
-2024-10-13 15:56:25.303525 : 'message'
-2024-10-13 15:56:52.490257 : exception in handle_command
-2024-10-13 15:56:52.490257 : {'chat_id': '1316144383', 'text': [{'ticker': 'NSE:FMCGIETF', 'cmp': 65.34}, {'ticker': 'NSE:AXISBNKETF', 'cmp': 522.91}, {'ticker': 'NSE:BANKETF', 'cmp': 516.77}]}
-2024-10-13 15:56:52.490257 : 'message'
-2024-10-13 16:13:52.648550 : exception in handle_command
-2024-10-13 16:13:52.648550 : {'update_id': 12828045, 'message': {'message_id': 167, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728816227, 'text': '/fund', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
-2024-10-13 16:13:52.648550 : 'chat'
-2024-10-13 16:37:15.230222 : exception in handle_command
-2024-10-13 16:37:15.230222 : {'update_id': 12828050, 'message': {'message_id': 177, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728817630, 'text': '/fund', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
-2024-10-13 16:37:15.230222 : local variable 'user_id' referenced before assignment
-2024-10-13 16:38:39.304529 : exception in handle_command
-2024-10-13 16:38:39.304529 : {'update_id': 12828051, 'message': {'message_id': 178, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728817714, 'text': '/fund', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
-2024-10-13 16:38:39.304529 : 'NoneType' object has no attribute 'get'
-2024-10-13 16:40:45.543965 : exception in handle_command
-2024-10-13 16:40:45.543965 : {'update_id': 12828053, 'message': {'message_id': 181, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728817840, 'text': '/fund', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
-2024-10-13 16:40:45.543965 : 'NoneType' object has no attribute 'get'
-2024-10-13 19:16:33.908536 : exception in handle_command
-2024-10-13 19:16:33.908536 : {'update_id': 12828063, 'message': {'message_id': 213, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728827188, 'text': '/holdings', 'entities': [{'offset': 0, 'length': 9, 'type': 'bot_command'}]}}
-2024-10-13 19:16:33.908536 : too many values to unpack (expected 2)
-2024-10-13 19:20:46.546489 : exception in handle_command
-2024-10-13 19:20:46.546489 : {'update_id': 12828064, 'message': {'message_id': 214, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728827441, 'text': '/holdings', 'entities': [{'offset': 0, 'length': 9, 'type': 'bot_command'}]}}
-2024-10-13 19:20:46.546489 : 'int' object is not subscriptable
-2024-10-13 19:21:42.819104 : exception in handle_command
-2024-10-13 19:21:42.819104 : {'update_id': 12828065, 'message': {'message_id': 215, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728827497, 'text': '/holdings', 'entities': [{'offset': 0, 'length': 9, 'type': 'bot_command'}]}}
-2024-10-13 19:21:42.819104 : 'int' object is not subscriptable
-2024-10-13 19:22:21.867957 : exception in handle_command
-2024-10-13 19:22:21.867957 : {'update_id': 12828066, 'message': {'message_id': 216, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728827536, 'text': '/holdings', 'entities': [{'offset': 0, 'length': 9, 'type': 'bot_command'}]}}
-2024-10-13 19:22:21.867957 : too many values to unpack (expected 2)
-2024-10-13 21:18:52.594554 : exception in handle_command
-2024-10-13 21:18:52.594554 : {'update_id': 12828071, 'message': {'message_id': 236, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728834528, 'text': '/holdings', 'entities': [{'offset': 0, 'length': 9, 'type': 'bot_command'}]}}
-2024-10-13 21:18:52.594554 : unrecognized token: ""open"
-2024-10-14 00:07:23.094236 : exception in handle_command
-2024-10-14 00:07:23.094236 : {'update_id': 12828073, 'message': {'message_id': 267, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1728844638, 'text': '/holdings', 'entities': [{'offset': 0, 'length': 9, 'type': 'bot_command'}]}}
-2024-10-14 00:07:23.094236 : cannot convert dictionary update sequence element #0 to a sequence
-2024-10-20 00:27:59.460841 : exception in handle_command
-2024-10-20 00:27:59.460841 : {'update_id': 12828135, 'message': {'message_id': 398, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364214, 'text': '/trade', 'entities': [{'offset': 0, 'length': 6, 'type': 'bot_command'}]}}
-2024-10-20 00:27:59.460841 : 'text'
-2024-10-20 00:28:30.575694 : exception in handle_command
-2024-10-20 00:28:30.575694 : {'update_id': 12828136, 'message': {'message_id': 399, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364310, 'text': '/trade', 'entities': [{'offset': 0, 'length': 6, 'type': 'bot_command'}]}}
-2024-10-20 00:28:30.575694 : 'text'
-2024-10-20 00:28:44.386936 : exception in handle_command
-2024-10-20 00:28:44.386936 : {'update_id': 12828137, 'message': {'message_id': 400, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364324, 'text': '/trade', 'entities': [{'offset': 0, 'length': 6, 'type': 'bot_command'}]}}
-2024-10-20 00:28:44.386936 : 'text'
-2024-10-20 00:31:35.923880 : exception in handle_command
-2024-10-20 00:31:35.923880 : {'update_id': 12828139, 'message': {'message_id': 403, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364495, 'text': '/orders', 'entities': [{'offset': 0, 'length': 7, 'type': 'bot_command'}]}}
-2024-10-20 00:31:35.923880 : 'Database' object has no attribute 'get_orders'
-2024-10-20 00:31:54.853996 : exception in handle_command
-2024-10-20 00:31:54.853996 : {'update_id': 12828140, 'message': {'message_id': 404, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364514, 'text': '/orders', 'entities': [{'offset': 0, 'length': 7, 'type': 'bot_command'}]}}
-2024-10-20 00:31:54.853996 : no such table: trade
-2024-10-20 00:32:12.780431 : exception in handle_command
-2024-10-20 00:32:12.780431 : {'update_id': 12828141, 'message': {'message_id': 405, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364532, 'text': '/orders', 'entities': [{'offset': 0, 'length': 7, 'type': 'bot_command'}]}}
-2024-10-20 00:32:12.780431 : Incorrect number of bindings supplied. The current statement uses 1, and there are 4 supplied.
-2024-10-20 00:33:20.000927 : exception in handle_command
-2024-10-20 00:33:20.000927 : {'update_id': 12828142, 'message': {'message_id': 406, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364599, 'text': '/orders', 'entities': [{'offset': 0, 'length': 7, 'type': 'bot_command'}]}}
-2024-10-20 00:33:20.000927 : 'average_price'
-2024-10-20 00:33:28.670830 : exception in handle_command
-2024-10-20 00:33:28.670830 : {'update_id': 12828143, 'message': {'message_id': 407, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364608, 'text': '/orders', 'entities': [{'offset': 0, 'length': 7, 'type': 'bot_command'}]}}
-2024-10-20 00:33:28.670830 : 'average_price'
-2024-10-20 00:33:46.686170 : exception in handle_command
-2024-10-20 00:33:46.686170 : {'update_id': 12828144, 'message': {'message_id': 408, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364626, 'text': '/orders', 'entities': [{'offset': 0, 'length': 7, 'type': 'bot_command'}]}}
-2024-10-20 00:33:46.686170 : 'average_price'
-2024-11-03 17:52:52.558570 : exception in handle_command
-2024-11-03 17:52:52.558570 : {'update_id': 12828174, 'message': {'message_id': 467, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1730636561, 'text': '/fund\n10000', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
-2024-11-03 17:52:52.558570 : no such table: users
-2024-11-03 17:56:03.013236 : exception in handle_command
-2024-11-03 17:56:03.013236 : {'update_id': 12828175, 'message': {'message_id': 468, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1730636752, 'text': '/fund\n10000', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
-2024-11-03 17:56:03.013236 : table funds has no column named user_id
-2024-11-03 17:56:28.035761 : exception in handle_command
-2024-11-03 17:56:28.035761 : {'update_id': 12828176, 'message': {'message_id': 469, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1730636777, 'text': '/fund\n10000', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
-2024-11-03 17:56:28.035761 : table funds has no column named user_id
-2024-11-03 17:56:47.951990 : exception in handle_command
-2024-11-03 17:56:47.951990 : {'update_id': 12828177, 'message': {'message_id': 470, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1730636797, 'text': '/fund\n10000', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
-2024-11-03 17:56:47.951990 : table funds has no column named user_id
+exception in send message
+2024-11-03 19:26:51.912401 : exception in send_broadcast
+2024-11-03 19:27:38.593580 : exception in send_broadcast
+2024-11-03 19:27:38.593580 : {}
+2024-11-03 19:27:38.593580 : the JSON object must be str, bytes or bytearray, not method
+2024-11-03 19:28:22.271363 : exception in send_broadcast
+2024-11-03 19:28:22.271363 : {}
+2024-11-03 19:28:22.271363 : the JSON object must be str, bytes or bytearray, not method
+2024-11-03 19:28:47.646747 : exception in send_broadcast
+2024-11-03 19:28:47.646747 : {}
+2024-11-03 19:28:47.646747 : Extra data: line 2 column 1 (char 11)
+2024-11-03 19:29:05.955353 : exception in send_broadcast
+2024-11-03 19:29:05.955353 : {}
+2024-11-03 19:29:05.955353 : the JSON object must be str, bytes or bytearray, not list
+2024-11-03 19:29:28.547591 : exception in send_broadcast
+2024-11-03 19:29:28.547591 : {}
+2024-11-03 19:29:28.547591 : the JSON object must be str, bytes or bytearray, not list
+2024-11-03 19:30:14.592742 : exception in send_broadcast
+2024-11-03 19:30:14.592742 : {}
+2024-11-03 19:30:14.592742 : the JSON object must be str, bytes or bytearray, not list
+2024-11-03 19:30:30.690457 : exception in send_broadcast
+2024-11-03 19:30:30.690457 : {}
+2024-11-03 19:30:30.690457 : the JSON object must be str, bytes or bytearray, not list

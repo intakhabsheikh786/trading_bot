@@ -42,6 +42,14 @@ class Database:
         )
         ''')
 
+        c.execute('''
+        CREATE TABLE IF NOT EXISTS users (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            status INTEGER NOT NULL
+        )
+        ''')
+
         # Create trade_threshold table to store per-trade risk threshold
         c.execute('''
         CREATE TABLE IF NOT EXISTS trade_threshold (
@@ -53,6 +61,61 @@ class Database:
 
         conn.commit()
         conn.close()
+
+    def subscribe(self, user_id):
+        conn = sqlite3.connect(self.db_name)
+        c = conn.cursor()
+
+        c.execute('SELECT * FROM users WHERE user_id = ?', (user_id,))
+        result = c.fetchone()
+
+        if result:
+            c.execute(
+                'UPDATE users SET status = ? WHERE user_id = ?;', (1, user_id))
+        else:
+            c.execute(
+                'INSERT INTO users (user_id, status) VALUES (?, ?);', (user_id, 1))
+
+        result = c.rowcount
+        conn.commit()
+        conn.close()
+        return result
+
+    def unsubscribe(self, user_id):
+        conn = sqlite3.connect(self.db_name)
+        c = conn.cursor()
+        # Update user status to unsubscribe
+
+        c.execute('SELECT * FROM users WHERE user_id = ?', (user_id,))
+        result = c.fetchone()
+
+        if result:
+            c.execute(
+                'UPDATE users SET status = ? WHERE user_id = ?;', (0, user_id))
+
+        result = c.rowcount
+        conn.commit()
+        conn.close()
+        return result
+
+    def get_users(self, type="table"):
+        conn = sqlite3.connect(self.db_name)
+        conn.row_factory = sqlite3.Row
+        c = conn.cursor()
+        c.execute('SELECT * FROM users')
+        users = c.fetchall()
+        message = ""
+        json_data = [dict(user) for user in users]
+
+        if type == "table":
+            for user in json_data:
+                message += "{}\n".format(user['user_id'])
+                message += "status: {}\n\n".format(
+                    user['user_id'], user['status'])
+
+        if type == "table":
+            return message
+        return json_data
 
         # Function to add funds to a user account
     def fund_account(self, user_id, amount):

@@ -13,8 +13,42 @@ class Command:
 
 class StartCommand(Command):
     def execute(self):
-        response = "Hello! How can I help you?"
+        response = "Hello! Welcome to automate trading platform\n Here you can check trades, balance, history, etc..."
         return self._create_response(response, "text")
+
+
+class SubscribeCommand(Command):
+    def execute(self):
+        user_id = self.update['message']['from']['id']
+        result = self.db.subscribe(user_id)
+        if result != 0:
+            response = f"Congrats, Your user_id has been captured for latest updates..."
+            return self._create_response(response, "text")
+        response = f"Please try again, your user_id has not been captured for latest updates..."
+        return self._create_response(response, "text")
+
+
+class UnsubscribeCommand(Command):
+    def execute(self):
+        user_id = self.update['message']['from']['id']
+        result = self.db.unsubscribe(user_id)
+        print(result)
+        if result != 0:
+            response = f"Your user_id has been removed for latest updates..."
+            return self._create_response(response, "text")
+        response = f"Please try again, your user_id has not been removed or not subscribed for latest updates..."
+        return self._create_response(response, "text")
+
+
+class GetUsersCommand(Command):
+    def execute(self):
+        try:
+            users = self.db.get_users()
+            if users != "":
+                return self._create_response(users, "text")
+            return self._create_response("Currenlty you no user has subscribed", "text")
+        except:
+            return self._create_response("Something is wrong at server level", "text")
 
 
 class HelpCommand(Command):
@@ -49,16 +83,24 @@ class GetFundCommand(Command):
 
 class HoldingsCommand(Command):
     def execute(self):
-        holdings = self.db.get_position()
-        # response = "\n".join(
-        #     [f"{h[1]} at {h[3]} for {h[2]}" for h in holdings])
-        return self._create_response(holdings, "text")
+        try:
+            holdings = self.db.get_position()
+            if holdings != "":
+                return self._create_response(holdings, "text")
+            return self._create_response("Currenlty you don't have any holdings", "text")
+        except:
+            return self._create_response("Something is wrong at server level", "text")
 
 
 class OrdersCommand(Command):
     def execute(self):
-        holdings = self.db.get_orders()
-        return self._create_response(holdings, "text")
+        try:
+            orders = self.db.get_orders()
+            if orders != "":
+                return self._create_response(orders, "text")
+            return self._create_response("No trades yet", "text")
+        except:
+            return self._create_response("Something is wrong at server level", "text")
 
 
 class TradeExecutionCommand(Command):
