@@ -142,3 +142,15 @@
 2024-10-20 00:33:46.686170 : exception in handle_command
 2024-10-20 00:33:46.686170 : {'update_id': 12828144, 'message': {'message_id': 408, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1729364626, 'text': '/orders', 'entities': [{'offset': 0, 'length': 7, 'type': 'bot_command'}]}}
 2024-10-20 00:33:46.686170 : 'average_price'
+2024-11-03 17:52:52.558570 : exception in handle_command
+2024-11-03 17:52:52.558570 : {'update_id': 12828174, 'message': {'message_id': 467, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1730636561, 'text': '/fund\n10000', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
+2024-11-03 17:52:52.558570 : no such table: users
+2024-11-03 17:56:03.013236 : exception in handle_command
+2024-11-03 17:56:03.013236 : {'update_id': 12828175, 'message': {'message_id': 468, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1730636752, 'text': '/fund\n10000', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
+2024-11-03 17:56:03.013236 : table funds has no column named user_id
+2024-11-03 17:56:28.035761 : exception in handle_command
+2024-11-03 17:56:28.035761 : {'update_id': 12828176, 'message': {'message_id': 469, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1730636777, 'text': '/fund\n10000', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
+2024-11-03 17:56:28.035761 : table funds has no column named user_id
+2024-11-03 17:56:47.951990 : exception in handle_command
+2024-11-03 17:56:47.951990 : {'update_id': 12828177, 'message': {'message_id': 470, 'from': {'id': 1316144383, 'is_bot': False, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'language_code': 'en'}, 'chat': {'id': 1316144383, 'first_name': 'Intakhab', 'username': 'Intakhab786', 'type': 'private'}, 'date': 1730636797, 'text': '/fund\n10000', 'entities': [{'offset': 0, 'length': 5, 'type': 'bot_command'}]}}
+2024-11-03 17:56:47.951990 : table funds has no column named user_id

@@ -61,11 +61,11 @@ class Database:
 
         # Insert user if not exists
         c.execute(
-            'INSERT OR IGNORE INTO users (user_id, balance) VALUES (?, ?)', (user_id, 0))
+            'INSERT OR IGNORE INTO funds (fund_id, balance) VALUES (?, ?)', (1, 0))
 
         # Update user balance
         c.execute(
-            'UPDATE users SET balance = balance + ? WHERE user_id = ?', (amount, user_id))
+            'UPDATE funds SET balance = balance + ? WHERE fund_id = ?', (amount, 1))
 
         conn.commit()
         conn.close()
@@ -108,7 +108,7 @@ class Database:
         conn = sqlite3.connect(self.db_name)
         c = conn.cursor()
 
-        c.execute('SELECT balance FROM funds WHERE fund_id = ?', (fund_id,))
+        c.execute('SELECT balance FROM funds WHERE fund_id = ?', (1,))
         result = c.fetchone()
 
         conn.close()
