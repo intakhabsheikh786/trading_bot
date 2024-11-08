@@ -21,3 +21,27 @@ exception in send message
 2024-11-03 19:30:30.690457 : exception in send_broadcast
 2024-11-03 19:30:30.690457 : {}
 2024-11-03 19:30:30.690457 : the JSON object must be str, bytes or bytearray, not list
+2024-11-08 22:13:38.603104 : exception in handle_command
+2024-11-08 22:13:38.603104 : {'message': {'chat': {'id': '1316144383'}}, 'text': [{'ticker': 'NSE:ALPHAETF', 'cmp': 26.16}, {'ticker': 'NSE:CONSUMBEES', 'cmp': 126}, {'ticker': 'NSE:ABSLNN50ET', 'cmp': 72.25}]}
+2024-11-08 22:13:38.603104 : 'from'
+2024-11-08 22:15:06.916117 : exception in send_broadcast
+2024-11-08 22:15:06.916117 : {}
+2024-11-08 22:15:06.916117 : local variable 'user' referenced before assignment
+2024-11-08 22:16:31.829974 : exception in send_broadcast
+2024-11-08 22:16:31.829974 : {}
+2024-11-08 22:16:31.829974 : local variable 'user' referenced before assignment
+2024-11-08 22:18:44.263948 : exception in send_broadcast
+2024-11-08 22:18:44.263948 : {}
+2024-11-08 22:18:44.263948 : local variable 'user' referenced before assignment
+2024-11-08 22:21:34.605909 : exception in send_broadcast
+2024-11-08 22:21:34.605909 : {}
+2024-11-08 22:21:34.605909 : local variable 'user' referenced before assignment
+2024-11-08 22:23:20.275840 : exception in send_broadcast
+2024-11-08 22:23:20.275840 : {}
+2024-11-08 22:23:20.275840 : local variable 'user' referenced before assignment
+2024-11-08 22:24:02.660089 : exception in send_broadcast
+2024-11-08 22:24:02.660089 : {}
+2024-11-08 22:24:02.660089 : local variable 'user' referenced before assignment
+2024-11-08 22:25:23.814499 : exception in send_broadcast
+2024-11-08 22:25:23.814499 : {}
+2024-11-08 22:25:23.814499 : local variable 'user' referenced before assignment

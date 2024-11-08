@@ -6,7 +6,6 @@ import datetime
 from utility import log
 from command import StartCommand, HelpCommand, DefaultCommand, AddFundCommand, GetFundCommand, HoldingsCommand, TradeExecutionCommand, ExitCommand, OrdersCommand, SubscribeCommand, UnsubscribeCommand, GetUsersCommand
 import traceback
-import json
 
 commands = {
     "/start": StartCommand,
@@ -60,6 +59,9 @@ def send_broadcast(message):
     try:
         print(type(db.get_users("json")))
         users = db.get_users("json")
+        if len(users) == 0:
+            print("Ignoring sending to bot as no user subscribe yet.")
+            return None
         text_message = message.get("type")
         response = message.get("response", "response")
         if text_message == "text":
@@ -117,12 +119,11 @@ def handle_position():
 
 @app.route("/exit_trade", methods=["POST"])
 def handle_exit():
-    print("command recieved.")
+    print("command recieved")
     update = request.get_json()
     command = commands.get("/exit_trade", DefaultCommand)
     print("command loaded.")
     response = command(update, db).execute()
-    # print(response)
     print("respose loaded.")
     send_message(response)
     print("response sent")
@@ -133,15 +134,9 @@ def handle_exit():
 def handle_command():
     update = {}
     try:
-        # db = Database()
-        # current_datetime = datetime.datetime.now()
-        # db.add_request(str(current_datetime) + " : " + str("request"))
         print("command recieved.")
         update = request.get_json()
         is_bot = update['message']['from']['is_bot']
-        print("is_bot : " + str(is_bot))
-        first_name = update['message']['from']['first_name']
-        print("Name : " + first_name)
         if is_bot == False:
 
             text = update['message']['text']
